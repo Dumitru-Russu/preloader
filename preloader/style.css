@@ -1,0 +1,43 @@
+body {
+    background-color: #112;
+}
+.preloader {
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+}
+.preloader .lg {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #555;
+    border-top-color: transparent;
+    border-radius: 105px;
+    box-sizing: border-box;
+    animation: rot 6s 1 linear;
+}
+.preloader .sm {
+    border: 5px solid #999;
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+    border-right-color: transparent;
+    margin-top: 17px;
+    margin-left: 16px;
+    animation: rot2 6s 1 linear;
+}
+@keyframes rot {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rot2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-720deg);
+    }
+}
